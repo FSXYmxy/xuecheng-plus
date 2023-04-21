@@ -1,0 +1,30 @@
+### 课程查询接口
+POST {{content_host}}/content/course/list?pageNo=1&pageSize=10
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus": "203001"
+}
+
+
+
+### 课程查询列表
+POST {{gateway_host}}/content/course
+Content-Type: application/json
+
+{
+  "auditStatus": "202002",
+  "courseName": ""
+}
+
+### 无令牌
+GET {{content_host}}/content/course/40
+
+### 测试令牌
+GET {{gateway_host}}/content/course/40
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ7XCJiaXJ0aGRheVwiOlwiMjAyMi0wOS0yOFQxOToyODo0NlwiLFwiY3JlYXRlVGltZVwiOlwiMjAyMi0wOS0yOFQwODozMjowM1wiLFwiaWRcIjpcIjUwXCIsXCJuYW1lXCI6XCLlrabnlJ8xXCIsXCJuaWNrbmFtZVwiOlwi5aSn5rC054mbXCIsXCJwYXNzd29yZFwiOlwiJDJhJDEwJDBwdDdXbGZUYm5QRFRjV3RwLy4yTXU1Q1RYdm9obk5RaFI2MjhxcTRSb0tTYzBkR0FkRWdtXCIsXCJzZXhcIjpcIjFcIixcInN0YXR1c1wiOlwiMVwiLFwidXNlcm5hbWVcIjpcInN0dTFcIixcInVzZXJwaWNcIjpcImh0dHA6Ly9maWxlLnh1ZWNoZW5nLXBsdXMuY29tL2RkZGZcIixcInV0eXBlXCI6XCIxMDEwMDFcIn0iLCJzY29wZSI6WyJhbGwiXSwiZXhwIjoxNjgxMzE2Mjc0LCJhdXRob3JpdGllcyI6WyJ0ZXN0Il0sImp0aSI6ImZjMTUxZDhhLThmMzItNGRkNC05YWQwLTY2M2U3ZjhkNGQ4NyIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.rDnQR-_j9KGqRKjQ-Wu1tDOt6OPBC7rLv_p0pLhOpWE
+
+###
+GET {{content_host}}/content/r/coursepublish/2
